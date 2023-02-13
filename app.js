@@ -7,7 +7,8 @@ app.use(bodyParser.urlencoded({extended : true}))
 app.use(express.static("public"))
 
 mongoose.set('strictQuery', false)
-mongoose.connect("mongodb://localhost:27017/instagramUser")
+mongoose.connect("mongodb+srv://Mehul-Kumar-Dhusia:Test123@cluster0.iatihjz.mongodb.net/InstagramDB")
+// mongoose.connect("mongodb://localhost:27017/instagramUser")
 const userSchema = {
     username : String,
     password : String
